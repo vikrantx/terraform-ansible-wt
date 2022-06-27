@@ -1,0 +1,6 @@
+
+host: "{{ ansible_default_ipv4.address }}"
+env: stage
+host_url: http://20.124.124.137:8080
+db_host: pg-flex-server-stage.postgres.database.azure.com
+okta_org_url: https://dev-91289822.okta.com

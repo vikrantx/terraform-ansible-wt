@@ -1,0 +1,6 @@
+
+host: "{{ ansible_default_ipv4.address }}"
+env: prod
+host_url: http://20.127.22.181:8080
+db_host: pg-flex-server-prod.postgres.database.azure.com
+okta_org_url: https://dev-91289822.okta.com

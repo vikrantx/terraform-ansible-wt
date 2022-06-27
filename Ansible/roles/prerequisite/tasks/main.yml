@@ -1,0 +1,21 @@
+---
+- name: update apt package
+  become: true
+  apt:
+    update_cache: yes
+
+- name: install postgresql packages
+  become: true
+  apt: pkg={{ item }} state=present update_cache=yes
+  tags: [packages]
+  with_items:
+    - "postgresql-client"
+
+- name: Install the nodejs 14
+  tags: nodejs 
+  shell: 'node -v || (curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - && sudo apt-get install -y nodejs)'
+
+- name: Install the nodejs
+  apt:
+    name: nodejs
+    state: present
