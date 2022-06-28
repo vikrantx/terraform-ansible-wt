@@ -1,5 +1,5 @@
 
-otcamp Week 6 - Ansible
+## Bootcamp Week 6 - Ansible
 
 Provisioning servers from central "ansible server/host" created for weight-tracker application.
 
