@@ -46,6 +46,10 @@ Create infrastructure and provision servers for weight tracker app
 
 #### Provisioning Infrastructure for Weight Tracker App
 
+Note - Decrypt var file before provisioning infrastructure.
+
+ansible-vault decrypt environments/<env>/group_vars/web_servers
+
 Staging :
 	ansible-playbook site.yml -i environments/stage/inventory
 
