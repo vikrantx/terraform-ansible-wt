@@ -23,7 +23,7 @@ steps:
   displayName: 'Bash : Init'
 
 - bash: |
-    la -R
+    ls -R
   displayName: 'Bash : PWD'
 
 - bash: |
